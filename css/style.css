@@ -1,0 +1,689 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+#btn {
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+    width: 54px;
+    height: 55px;
+    /*background: url(icons.png) no-repeat 0 -110px;*/
+}
+
+
+/*背景图可随意找一张*/
+
+font-size: 12px;
+line-height: 55px;
+text-align: center;
+text-indent: -9999em;
+cursor: pointer;
+display: none;
+
+/*注册部分开始*/
+
+.Sign-in {
+    position: fixed;
+    background: rgba(0, 0, 0, .7);
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    /*    display: none;*/
+    padding-top: 50px;
+}
+
+.Sign-in>form {
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    display: none;
+}
+
+.Sign-in>form legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+.Sign-in>form legend+a {
+    float: right;
+    margin-top: -50px;
+    margin-right: 10px;
+    color: #1668e2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Sign-in>form span {
+    color: #000;
+    float: right;
+    margin-right: 50px;
+}
+
+.Sign-in>form a span i {
+    color: #528bdf;
+    font-size: 16px;
+}
+
+.Sign-in form input[type="text"],
+.Sign-in form input[type="password"] {
+    clear: both;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 2px solid #1668e2;
+    padding-left: 5px;
+    color: black;
+}
+
+.Sign-in>form input[type="password"] {
+    margin-bottom: 5px;
+}
+
+.Sign-in>form input[type="checkbox"] {
+    float: left;
+    margin-left: 50px;
+}
+
+.Sign-in>form p {
+    float: left;
+    color: black;
+}
+
+.Sign-in>form p+a {
+    float: right;
+    margin-right: 50px;
+}
+
+.Sign-in>form button {
+    width: 300px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.Sign-in .div1 {
+    width: 80px;
+    height: 80px;
+    top: 60%;
+    left: 50%;
+    margin-left: -40px;
+    border-radius: 50%;
+    position: fixed;
+    background: rgba(0, 0, 0, .7);
+    transform: scale(.9);
+    transition: .5s;
+}
+
+.Sign-in .div1:hover {
+    transform: scale(1.2);
+}
+
+.Sign-in .div1 span {
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.immediately {
+    width: 500px;
+    position: fixed;
+    left: 50%;
+    margin-left: -250px;
+    background: #fff;
+    color: black;
+    display: none;
+}
+
+.immediately form {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.immediately .fhdl {
+    float: right;
+    margin-top: -50px;
+    color: #1668e2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.immediately form legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+.immediately form lable {
+    display: inline-block;
+    width: 90px;
+    font-size: 16px;
+}
+
+.immediately form button {
+    margin-top: -20px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+.immediately form input[type="checkbox"] {
+    float: left;
+    margin-top: -20px;
+    margin-left: 90px;
+}
+
+.immediately form input[type="checkbox"]+p {
+    float: left;
+    margin-top: -24px;
+    margin-left: 110px;
+}
+
+.immediately form .zzc {
+    width: 300px;
+    margin-top: 10px;
+    height: 40px;
+}
+
+@media (max-width: 517px) {
+    .immediately {
+        transform: scale(.5);
+        top: -50px;
+    }
+}
+
+@media (max-width: 517px) {
+    .Sign-in>form {
+        transform: scale(.8);
+        top: 20px;
+    }
+}
+
+@media (max-width: 517px) {
+    .Sign-in>form legend+a {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 517px) {
+    .Sign-in .div1 {
+        transform: scale(.5);
+        top: 50%;
+    }
+}
+
+
+/*注册部分结束*/
+
+.thumbnail:hover {
+    /*border: 1px solid red;*/
+}
+
+header img {
+    padding: 13px 0;
+}
+
+header .bj .right {
+    float: right;
+    margin-right: 50px;
+}
+
+header .bj .right .shu {
+    padding: 0 5px;
+}
+
+header .bj .right a {
+    display: inline-block;
+    color: #333;
+    line-height: 60px;
+}
+
+header .bj .right a:hover {
+    color: red;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+#navbarC ul li a {
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+#navbarC ul li>a:hover {
+    background: #3983E5;
+    color: #fff;
+}
+
+.navbar {
+    margin-bottom: -1px;
+}
+
+.navbar-header i {
+    padding-right: 5px;
+    font-size: 16px;
+}
+
+#banner {}
+
+.carousel-indicators .active {
+    background-color: red;
+}
+
+.index-sider {
+    position: fixed;
+    width: 50px;
+    right: 0;
+    bottom: 390px;
+    z-index: 9;
+}
+
+.index-sider .weix,
+.index-sider .dh,
+.index-sider .shouji {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin: 10px 0;
+    cursor: pointer;
+    background: url(../img/tmbj.png);
+    position: relative;
+    padding-top: 12px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.index-sider .ewm,
+.index-sider .dianh,
+.index-sider .sjewm {
+    position: absolute;
+    width: 156px;
+    height: 182px;
+    top: 68px;
+    left: -160px;
+    background: url("../img/beij.png") top center no-repeat;
+    box-sizing: border-box;
+    padding: 10px 17px 10px 10px;
+    display: none;
+    text-align: center;
+}
+
+.index-sider .sjewm {
+    width: 156px;
+    height: 160px;
+    top: 10px;
+    display: none;
+}
+
+.index-sider .sjewm img {
+    position: absolute;
+    right: 7px;
+    top: 0;
+}
+
+.index-sider .sjewm span {
+    display: block;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.index-sider .ewm span {
+    display: block;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.index-sider .dianh {
+    width: 156px;
+    height: 126px;
+    top: 128px;
+    display: none;
+}
+
+.index-sider .dianh p {
+    font-size: 16px;
+    line-height: 2;
+    color: #FFF;
+    text-align: left;
+}
+
+.lineb .dg {
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    background: url("../img/lineb.png") no-repeat center bottom;
+}
+
+#section {
+    margin-top: 25px;
+}
+
+#section .huizhang {
+    padding: 1px 10px;
+}
+
+#section .huizhang h3 {
+    margin-bottom: 15px;
+}
+
+#section .huizhang p {
+    padding: 0 8px;
+}
+
+#section .huizhang label {
+    width: 33%;
+    font-size: 16px;
+}
+
+#section .huizhang select {
+    width: 65%;
+    height: 26px;
+    color: #333;
+}
+
+#section .huizhang input {
+    padding: 4px 20px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#section .jqhz {
+    padding: 8px 15px 30px;
+}
+
+#section .jqhz p {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#section .jqhz h3 {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#section .jqhz p a {
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#section .jqhz p a:hover {
+    color: red;
+}
+
+#section .jqhz span {
+    float: right;
+}
+
+#section .zxgg .tips img {
+    margin-top: -5px;
+    margin-left: -10px;
+    padding-right: 5px;
+}
+
+#section .zxgg span {
+    float: right;
+    margin-top: 25px;
+}
+
+#section .zxgg span a {
+    color: #333;
+}
+
+#section span a:hover {
+    color: red;
+}
+
+#section .zxgg {
+    padding: 1px 5px 1px 30px;
+}
+
+#section .zxgg ol li {
+    line-height: 2em;
+}
+
+#section .zxgg ol li a {
+    font-size: 14px;
+    color: #333;
+    letter-spacing: 0.1em;
+}
+
+#section .zxgg ol li a:hover {
+    color: red;
+}
+
+#section .page-header {
+    margin-top: -15px;
+    text-align: center;
+}
+
+#section .zhhg {
+    padding: 1px 0;
+}
+
+#section .col-md-8 .zhhg {
+    text-align: center;
+}
+
+#section .col-md-8 .zhhg img {
+    margin-bottom: 8px;
+}
+
+#section .zhhg .thumbnail:hover {
+    transform: scale(1.04);
+}
+
+#section .col-md-8 .zhhg a {
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+#section .col-md-8 .zhhg a:hover {
+    color: red;
+}
+
+
+/*特价酒店部分*/
+
+#section1 .tj {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFF;
+    cursor: pointer;
+    background-color: #FF902C;
+}
+
+#section1 .tp {
+    overflow: hidden;
+}
+
+#section1 .tp img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#section1 h4 a {
+    color: #333;
+}
+
+#section1 h4 a:hover {
+    color: red;
+}
+
+#section1 h4,
+#section1 .area {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#section1 .area {
+    color: #999;
+}
+
+#section1 .icon-area {
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-image: url(../img/icon-area.png);
+    background-repeat: no-repeat;
+}
+
+#section1 .price {
+    padding: 10px 0 0;
+    text-align: right;
+    border-top: 1px solid #ECECEC;
+}
+
+#section1 .price-origin {
+    position: relative;
+    display: inline-block;
+}
+
+#section1 .price-sale {
+    margin-left: 6px;
+    font: 32px Arial;
+    color: #F60;
+}
+
+#section1 .price-sale dfn {
+    font-size: 18px;
+    margin-right: 2px;
+    font-style: normal;
+    font-family: "Arial !important";
+}
+
+#section1 .price-sale span {
+    margin-left: 3px;
+    vertical-align: 2px;
+    font: 12px Simsun;
+}
+
+#section1 .price-origin del {
+    font: 16px Arial;
+    color: #999;
+}
+
+#section1 .price-origin .tag-sale {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    height: 16px;
+    margin-left: -17px;
+    padding: 0 3px;
+    line-height: 16px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #FFF;
+    background-color: #FE5B52;
+}
+
+#section1 .price-origin .tag-sale b {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -4px;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-top: 4px solid #FE5B52;
+    border-left: 4px solid #FFF;
+    border-right: 4px solid #FFF;
+}
+
+
+/*特价酒店部分*/
+
+
+/*团购酒店部分*/
+
+#section2 h4 a {
+    color: #333;
+}
+
+#section2 h4 a:hover {
+    color: red;
+}
+
+#section2 h4,
+#section2 .area {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#section2 .icon-area {
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-image: url(../img/icon-area.png);
+    background-repeat: no-repeat;
+}
+
+#section2 .price-sale {
+    font: 32px Arial;
+    color: #F60;
+}
+
+
+/*团购酒店部分*/
+
+
+/*footer部分*/
+
+#footer {
+    border-top: 2px solid #fff;
+    background: #e0e0e0;
+}
+
+#footer p:nth-child(1) {
+    margin-top: 10px;
+}
+
+#footer a {
+    color: #000;
+}
+
+#footer a:hover {
+    text-decoration: none;
+}
+
+
+/*footer部分*/

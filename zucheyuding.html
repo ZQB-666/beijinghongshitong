@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>租车预定</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/zucheyuding.css">
+</head>
+<script>
+    function shouji(){
+        var a=document.getElementById("sjewm");
+        if (a.style.display=="block"){
+            a.style.display="none";
+        }else {
+            a.style.display="block";
+        }
+    }
+    function weix(){
+        var a=document.getElementById("ewm");
+        if (a.style.display=="block"){
+            a.style.display="none";
+        }else {
+            a.style.display="block";
+        }
+    }
+    function dh(){
+        var a= document.getElementById("dianh");
+        if(a.style.display=="block"){
+            a.style.display="none";
+        }else {
+            a.style.display="block";
+        }
+    }
+    function selectCity(){
+        var City=new Array();
+        City[0]=["青秀区"];
+        City[1]=["海口"];
+        City[2]=["永定区"];
+        City[3]=["城区"];
+        City[4]=["小店区"];
+        var n=document.getElementById("sheng").selectedIndex;
+        document.getElementById("city").options.length=0;
+        for(var i=0;i<City[n].length;i++){
+            var op=new Option(City[n][i],City[n][i]);
+            document.getElementById("city").options.add(op);
+        }
+    }
+</script>
+<body>
+<!--header部分-->
+<header>
+    <div class="bj">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <a href="#"><img src="img/logo.png" alt=""/></a>
+                </div>
+                <div class="col-md-3">
+                    <div class="right">
+                        <a href="#">登录</a>
+                        <span class="shu">|</span>
+                        <a href="#">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav role="navigation" class="navbar navbar-default">
+        <div class="container">
+            <!--折叠的按钮-->
+            <div class="navbar-header">
+                <button data-target="#navbarC" class="navbar-toggle" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><i class="glyphicon glyphicon-home"></i>首页</a>
+            </div>
+            <!--导航，被折叠的步伐-->
+            <div id="navbarC" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="gongsijianjie.html" class="b1 active">公司简介</a></li>
+                    <li><a href="huichang.html" class="b2">会场预订</a></li>
+                    <li><a href="ruzhujiudian.html" class="b3">入住酒店</a></li>
+                    <li><a href="zucheyuding.html" class="b4">租车预定</a></li>
+                    <li><a href="#" class="b5">新闻中心</a></li>
+                    <li><a href="#" class="b6">联系方式</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--header部分-->
+<!--banner部分-->
+<div id="banner">
+    <div id="c-e-g" class="carousel slide">
+        <!--小圆点-->
+        <ol class="carousel-indicators">
+            <li data-target="#c-e-g" data-slide-to="0" class="active"></li>
+            <li data-target="#c-e-g" data-slide-to="1"></li>
+        </ol>
+        <!--小圆点-->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="banner1">
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner2">
+
+                </div>
+            </div>
+        </div>
+        <!--左箭头-->
+        <a href="#c-e-g" data-slide="prev" class="left carousel-control">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <!--左箭头-->
+        <!--右箭头-->
+        <a href="#c-e-g" data-slide="next" class="right carousel-control">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <!--右箭头-->
+    </div>
+</div>
+<div class="zuche">
+    <div class="container">
+        <div class="row">
+            <div class="desc col-md-5 col-sm-6 col-md-offset-1">
+                <div class="thumbnail">
+                    <h3>租车预定</h3>
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>取车</h5>
+                                <select onchange="selectCity()" id="sheng">
+                                    <option value="">南宁</option>
+                                    <option value="">海口</option>
+                                    <option value="">张家界</option>
+                                    <option value="">大同</option>
+                                    <option value="">太原</option>
+                                </select>
+                                <select id="city">
+                                    <option value="">青秀区</option>
+                                </select>
+                                <input type="date">
+                                <select class="select">
+                                    <option value="">机场店</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>还车</h5>
+                                <select onchange="selectCity()" id="sheng1">
+                                    <option value="">南宁</option>
+                                    <option value="">海口</option>
+                                    <option value="">张家界</option>
+                                    <option value="">大同</option>
+                                    <option value="">太原</option>
+                                </select>
+
+
+                                <select id="city1">
+                                    <option value="">青秀区</option>
+                                </select>
+                                <input type="date">
+                                <select class="select">
+                                    <option value="">机场店</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button value="">立即选车</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner部分-->
+
+
+
+<!--侧边二维码-->
+<div class="index-sider">
+        <div class="shouji" onclick="shouji()">分享</div>
+        <div class="sjewm" id="sjewm">
+            <a href="#"><img src="img/fenx.png" alt=""></a>
+        </div>
+        <div class="weix" onclick="weix()">
+            <img src="img/wx.png" alt="">
+        </div>
+        <div class="ewm" id="ewm">
+            <img src="img/ewm.png" alt="">
+            <span>扫一扫，关注我们</span>
+        </div>
+
+        <div class="dh" onclick="dh()">
+            <img src="img/dh.png" alt="">
+        </div>
+        <div class="dianh" id="dianh">
+            <p>咨询电话：</p>
+            <p>0755-8284 8800
+                <br>
+                0755-8284 8900
+            </p>
+        </div>
+    </div>
+<!--侧边二维码-->
+
+
+
+<!--main部分-->
+<div class="main">
+    <div class="lineb">
+        <div class="container">
+            <h2 class="dg">精选特惠，有惊喜等你</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8  col-sm-8">
+                <div class="thumbnail">
+                    <a href="#"><img src="img/shouc.jpg" alt=""></a>
+            </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#"><img src="img/lianhe.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+        <div class="row che">
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#">
+                        <h4>小轿车-大众</h4>
+                        <p>Honda</p>
+                        <p><span>￥60</span>/每天</p>
+                        <img src="img/che1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#">
+                        <h4>小轿车-</h4>
+                        <p>现代全新胜达</p>
+                        <p><span>￥300</span>/每天</p>
+                        <img src="img/che2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#">
+                        <h4>小轿车-大众</h4>
+                        <p>大众斯柯达野帝</p>
+                        <p><span>￥500</span>/每天</p>
+                        <img src="img/che3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#">
+                        <h4>小轿车-大众</h4>
+                        <p>一汽马自达全新阿特慈</p>
+                        <p><span>￥200</span>/每天</p>
+                        <img src="img/che4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#">
+                        <h4>商务车-宝马</h4>
+                        <p>别克GL8经典</p>
+                        <p><span>￥400</span>/每天</p>
+                        <img src="img/che5.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#">
+                        <h4>小轿车-奥迪</h4>
+                        <p>MGGS（锐腾）</p>
+                        <p><span>￥500</span>/每天</p>
+                        <img src="img/che6.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <div class="container">
+    <div class="thumbnail">
+        <div class="lineb">
+
+                <h2 class="dg">租车快讯，我都懂</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 zc">
+                <ul class="list-unstyled">
+                    <a href="#"><h3>新闻资讯</h3></a>
+                    <li><a href="#">燃油政策有哪些？</a></li>
+                    <li><a href="#">异地还车费怎样计算?</a></li>
+                    <li><a href="#">订单价格是否包含异地还车费？</a></li>
+                    <li><a href="#">什么是异地还车费？</a></li>
+                    <li><a href="#">租金费用</a></li>
+                    <li><a href="#">文章标题</a></li>
+                    <li><a href="#">故弄玄虚</a></li>
+                    <li><a href="#">地面不平，踢脚线与地板有间隙</a></li>
+                    <li><a href="#">这些问题千万别犯！否则装修就是“无底洞”</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4 zc">
+                <ul class="list-unstyled">
+                    <a href="#"><h3>租车问答</h3></a>
+                    <li><a href="#">有霸道车吗？</a></li>
+                    <li><a href="#">有轩逸车吗？</a></li>
+                    <li><a href="#">租车押金多少，可以长租么?</a></li>
+                    <li><a href="#">租车押金多少？</a></li>
+                    <li><a href="#">你好，我在火车南站取车机场还车，行吗？</a></li>
+                    <li><a href="#">海口租车公司都有哪些？</a></li>
+                    <li><a href="#">海口租车多少钱一天?</a></li>
+                    <li><a href="#">海口租车有配司机吗?</a></li>
+                    <li><a href="#">海口租一辆宝马大概多少钱?</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="row kx">
+                    <div class="col-md-5 col-xs-6">
+                        <a href="#"><img src="img/bxsm_01.jpg" alt=""></a>
+                        <a href="#"><img src="img/bxsm_03.jpg" alt=""></a>
+                        <a href="#"><img src="img/bxsm_05.jpg" alt=""></a>
+                    </div>
+                    <div class="col-md-7 col-xs-6">
+                        <a href="#"><img src="img/bxsm_02.jpg" alt=""></a>
+                        <a href="#"><img src="img/bxsm_04.jpg" alt=""></a>
+                        <a href="#"><img src="img/bxsm_06.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="miani-shix">
+        <div class="container">
+        <div class="thumbnail">
+        <div class="row">
+            <div class="col-md-2 col-xs-6 col-sm-2">
+                <h5>租车预订说明</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">租车手续</a></li>
+                    <li><a href="#">车辆租赁合同</a></li>
+                    <li><a href="#">租车说明</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6 col-sm-2">
+                <h5>租车费用及结算</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">银行支付</a></li>
+                    <li><a href="#">结算流程</a></li>
+                    <li><a href="#">银行支付</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6 col-sm-2">
+                <h5>紧急事务处理</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">保险责任</a></li>
+                    <li><a href="#">理赔说明</a></li>
+                    <li><a href="#">事故处理</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6 col-sm-2">
+                <h5>会员管理</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">会员章程</a></li>
+                    <li><a href="#">会员细则</a></li>
+                    <li><a href="#">定级积分</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6 col-sm-2">
+                <h5>客服服务</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">门店查询</a></li>
+                    <li><a href="#">咨询与投诉</a></li>
+                    <li><a href="#">联系方式</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6 col-sm-2">
+                <h5>帮助中心</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">新手上路</a></li>
+                    <li><a href="#">服务规则</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--main部分-->
+<!--footer部分-->
+<footer id="footer">
+    <div class="container">
+        <div class="row text-center">
+            <p>版权所有：北京鸿世通国际会展有限公司</p>
+            <p>电话：86 10 6526 2861 &nbsp;传真：86 10 6538 0018
+                &nbsp;邮箱：<a href="#">info@annexhibition.com</a>
+            </p>
+            <p>网站建设技术支持：杰锐飞扬
+                &nbsp;备案号：<a href="#">京ICP备07034882号</a>
+            </p><i></i>
+        </div>
+    </div>
+</footer>
+<!--footer部分-->
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</html>

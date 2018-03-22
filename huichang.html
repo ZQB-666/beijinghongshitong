@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>会场预定</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/huichang.css">
+</head>
+<script>
+    function shouji(){
+        var a=document.getElementById("sjewm");
+        if (a.style.display=="block"){
+            a.style.display="none";
+        }else {
+            a.style.display="block";
+        }
+    }
+    function weix(){
+        var a=document.getElementById("ewm");
+        if (a.style.display=="block"){
+            a.style.display="none";
+        }else {
+            a.style.display="block";
+        }
+    }
+    function dh(){
+        var a= document.getElementById("dianh");
+        if(a.style.display=="block"){
+            a.style.display="none";
+        }else {
+            a.style.display="block";
+        }
+    }
+</script>
+<body>
+<header>
+    <div class="bj">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9  col-sm-9">
+                    <a href="#"><img src="img/logo.png" alt=""/></a>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="right">
+                        <a href="#">登录</a>
+                        <span class="shu">|</span>
+                        <a href="#">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<nav role="navigation" class="navbar navbar-default">
+<div class="container">
+<!--折叠的按钮-->
+<div class="navbar-header">
+<button data-target="#navbarC" class="navbar-toggle" data-toggle="collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+</button>
+<a href="index.html" class="navbar-brand"><i class="glyphicon glyphicon-home"></i>首页</a>
+</div>
+<!--导航，被折叠的步伐-->
+<div id="navbarC" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+    <li><a href="gongsijianjie.html" class="b1 active">公司简介</a></li>
+    <li><a href="huichang.html" class="b2">会场预订</a></li>
+    <li><a href="ruzhujiudian.html" class="b3">入住酒店</a></li>
+    <li><a href="zucheyuding.html" class="b4">租车预定</a></li>
+    <li><a href="#" class="b5">新闻中心</a></li>
+    <li><a href="#" class="b6">联系方式</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+<div id="banner">
+<div class="container">
+<div class="row">
+<div class="hc">
+        <div class="col-md-4">
+            <div class="thumbnail bj">
+                <a href="#">我的订单</a>
+                <h3>会场预定</h3>
+                <p class="p1">免费定制需求，30分钟获得多个报价</p>
+                <p class="p2"><span>城市</span>
+                    <input type="text" placeholder="北京">
+                </p>
+                <p class="p2"><span>关键词</span>
+                    <input type="text" placeholder="请输入酒店名字/关键词">
+                </p>
+                <p class="p3">
+                    <input type="submit" value="搜索会场" class="btn btn-default">
+                    <input type="submit" value="定制需求" class="btn btn-warning">
+                </p>
+                <p class="p4">
+                    客服电话：010-83034816 |
+                    覆盖9000余家热门会议酒店 |
+                    专业会议顾问贴心服务
+                </p>
+            </div>
+        </div>
+    </div>
+<div class="col-md-8">
+<div id="banner1">
+    <div id="c-e-g" class="carousel slide">
+        <!--小圆点-->
+        <ol class="carousel-indicators">
+            <li data-target="#c-e-g" data-slide-to="0" class="active"></li>
+            <li data-target="#c-e-g" data-slide-to="1"></li>
+            <li data-target="#c-e-g" data-slide-to="2"></li>
+            <li data-target="#c-e-g" data-slide-to="3"></li>
+            <li data-target="#c-e-g" data-slide-to="4"></li>
+            <li data-target="#c-e-g" data-slide-to="5"></li>
+            <li data-target="#c-e-g" data-slide-to="6"></li>
+        </ol>
+        <!--小圆点-->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="banner1">
+                    <div class="row">
+                        <img src="img/7.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner2">
+                    <div class="row">
+                        <img src="img/2.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner3">
+                    <div class="row">
+                        <img src="img/3.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner4">
+                    <div class="row">
+                        <img src="img/4.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner4">
+                    <div class="row">
+                        <img src="img/5.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner4">
+                    <div class="row">
+                        <img src="img/6.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="banner4">
+                    <div class="row">
+                        <img src="img/1.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--左箭头-->
+        <a href="#c-e-g" data-slide="prev" class="left carousel-control">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <!--左箭头-->
+        <!--右箭头-->
+        <a href="#c-e-g" data-slide="next" class="right carousel-control">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <!--右箭头-->
+    </div>
+    <div class="index-sider">
+        <div class="shouji" onclick="shouji()">分享</div>
+        <div class="sjewm" id="sjewm">
+            <a href="#"><img src="img/fenx.png" alt=""></a>
+        </div>
+
+        <div class="weix" onclick="weix()">
+            <img src="img/wx.png" alt="">
+        </div>
+        <div class="ewm" id="ewm">
+            <img src="img/ewm.png" alt="">
+            <span>扫一扫，关注我们</span>
+        </div>
+
+        <div class="dh" onclick="dh()">
+            <img src="img/dh.png" alt="">
+        </div>
+        <div class="dianh" id="dianh">
+            <p>咨询电话：</p>
+            <p>0755-8284 8800
+                <br>
+                0755-8284 8900
+            </p>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="main">
+<div class="container">
+<div class="thumbnail">
+<h2>热门会议城市</h2>
+<div class="row">
+<div class="col-md-8 col-sm-8">
+<div class="row">
+<div class="col-md-6 col-sm-6">
+<div class="thumbnail">
+    <a href="#"><img src="img/rmh1.jpg" alt=""></a>
+    <div class="rm">
+        <span class="span1">容纳人数：600人</span>
+        <a href="#"><h4>北京天伦王朝酒店</h4></a>
+        会议厅最大面积760平方米
+        <p>参考价<span> ￥5500</span>/天</p>
+    </div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6">
+<div class="thumbnail">
+<a href="#"><img src="img/rmh5.jpg" alt=""></a>
+    <div class="rm">
+        <span class="span1">容纳人数：700人</span>
+        <a href="#"><h4>上海万豪虹桥大酒店</h4></a>
+        会议厅最大面积745平方米
+        <p>参考价<span> ￥5000</span>/天</p>
+    </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-sm-6">
+        <div class="thumbnail">
+            <a href="#"><img src="img/rmh6.jpg" alt=""></a>
+            <div class="rm">
+                <span class="span1">容纳人数：1000人</span>
+                <a href="#"><h4>浙江三立开元名都大酒店 </h4></a>
+                会议厅最大面积930平方米
+                <p>参考价<span> ￥8000</span>/天</p>
+            </div>
+        </div>
+    </div>
+<div class="col-md-6 col-sm-6">
+        <div class="thumbnail">
+            <a href="#"><img src="img/rmh7.jpg" alt=""></a>
+            <div class="rm">
+                <span class="span1">容纳人数：1410人</span>
+                <a href="#"><h4>深圳君悦酒店</h4></a>
+                会议厅最大面积1000平方米
+                <p>参考价<span> ￥5600</span>/天</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4">
+      <a href="#"><img src="img/ewm.jpg" alt=""></a>
+</div>
+
+</div>
+</div>
+    <div class="thumbnail">
+        <h2>近期举办的会议</h2>
+        <div class="row">
+        <div class="col-md-9 col-sm-9">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#"><img src="img/jq1.jpg" alt="">
+                   </a>
+                    <div class="jq">
+                        <a href="#"><h4>某教育公司培训会</h4>北京温都水城座落在昌平区北七家镇郑各庄村，北枕北京的母亲河--温榆河，南倚北五环、立汤快速路，八达岭高速路披挂东西两侧。温都水城现包括：水城国际大酒店、王府院（总统套房）、宏福大厦和湖湾酒店等客房，温泉养生会馆、水空间、红楼岛、高尔夫练习场等休闲商务区。温都水城设计理念超前、构思布局巧妙和整体功能相得益彰毋庸，是举办会议的不错之选。</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#"><img src="img/jq2.jpg" alt="">
+                    </a>
+                    <div class="jq">
+                        <a href="#"><h4>某保险公司培训会</h4>百世酒店位于成都市锦江区天仙桥北路12号，地理位置优越，坐拥天府广场与春熙路，毗邻高端购物中心太古里和IFS以及千年古寺大慈寺，随时信步于府南河畔。酒店距离成都东客站仅约十分钟车程，距离火车北站仅约二十分钟车程，约三十分钟便可抵达双流国际机场，坐拥繁华，交通便捷，百世让您出则繁华，入则宁静。王者绝非偶然，实力铸就经典，是您举办商务会议的不二之选。</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#"><img src="img/jq3.jpg" alt="">
+                    </a>
+                    <div class="jq">
+                        <a href="#"><h4>某保健品公司培训会</h4>归元大觉宾舍是华中地区首家四星级佛教文化主题宾馆，她融入了佛教禅宗文化的精髓，采用了全智能化管理系统，打造了系列佛教文化主题轰动，是您品茗礼佛，体验禅修，洗涤心灵的理想之所。大觉宾舍位于武汉市汉阳区翠微横路，座落于湖北省最著名的丛林——归元禅寺内，宾舍建筑面积8000平方米，主楼高6层，清式微派建筑风格，园林景观环绕其间，花木禅院尽收眼底，古朴典雅，安宁舒适，寺内可以同时容纳近600人。开业时间2010年2月28日，主楼高6层，客房总数163间（套）。</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#"><img src="img/jq4.jpg" alt="">
+                    </a>
+                    <div class="jq">
+                        <a href="#"><h4>某生物科技公司发布会</h4>黄河京都会议中心是黄河集团在2012年斥巨资新建的又一集会议、宴会、演出、新品发布、公司活动等多功能服务的五星级酒店。黄河京都会议中心坐落在北京市昌平区，这里小桥流水，环境优雅，由一座主楼、两组客房楼组成。共拥有各类客房140间/套，大中型会议室10余间，中餐厅3个及咖啡厅/酒吧，荟萃中外美食。康乐设施一应俱全，可满足您闲暇之余健身娱乐之需。</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#"><img src="img/jq5.jpg" alt="">
+                    </a>
+                    <div class="jq">
+                        <a href="#"><h4>某互联网公司总结会</h4>杭州瑞莱克斯大酒店地处上城区望江东路近汽车南站，毗邻四季青服装市场、西湖银泰、市民中心、吴山广场、钱塘江，出行便捷。杭州瑞莱克斯大酒店拥有各式精致客房可供您选择，并附设餐厅、12个大、中、小会议室和1个多功能宴会厅，是您商务出行、休闲度假的理想下榻之地。</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail">
+                    <a href="#"><img src="img/jq6.jpg" alt="">
+                    </a>
+                    <div class="jq">
+                        <a href="#"><h4>某电商公司招商会</h4>深圳登喜路国际大酒店按照国家五星级标准、投资3.5亿元建造，致力于打造宝安区乃至深圳市五星级综合型商务酒店之典范。酒店主体高16层，总建筑面积5万平方米。酒店拥有333间（套）客房以及中餐厅、西餐厅、大堂吧、行政酒廊、近万平米的大型宴会厅等餐饮设施，另有各类型会议室、康体中心、露天泳池、SPA、商务中心、精品店等配套设施。酒店装修风格高雅、舒适浪漫、彰显尊贵、是身份、成功和品味的象征，是休闲、度假、会议和商务活动的最佳选择。深圳登喜路国际大酒店是登喜路酒店集团倾力打造的旗舰店，酒店位于深圳市宝安区商业中心，临近107国道、广深高速宝安出口，距深圳机场仅10分钟车程，交通极为便利。</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="thumbnail">
+                    <div class="mt">
+                        <h3>媒体报道</h3>
+                        <a href="#">
+                        <span>2015-12-16</span>
+                        <h4>环球网财经</h4>
+                        <p>去哪儿网上线“会场”业务</p>
+                        </a>
+                    </div>
+                    <div class="mt">
+                        <a href="#">
+                        <span>2015-12-16</span>
+                        <h4>环球网财经</h4>
+                        <p>去哪儿网上线“会场”业务</p>
+                        </a>
+                    </div>
+                    <div class="mt">
+                        <a href="#">
+                        <span>2015-12-24</span>
+                        <h4>商旅专家</h4>
+                        <p>去哪儿找会场？对，说的就是那个进军MICE的去哪儿网！</p>
+                        </a>
+                    </div>
+                    <div class="mt">
+                        <a href="#">
+                        <span>2016-01-10</span>
+                        <h4>中国网</h4>
+                        <p>去哪儿专注低星酒店 移动端将发力“会场”业务</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-sm-8">
+    <div class="thumbnail">
+        <h2 class="h2">发布会议需求</h2>
+        <div class="step">
+            <ul class="list-unstyled">
+                <li class="li1 active">
+                    <i class="first"></i>填写需求</li>
+                <li class="li2">发布完成</li>
+            </ul>
+        </div>
+
+
+
+                <form action="#" method="post">
+                    <p><label>城市</label><input type="text" placeholder="北京" class="in"></p>
+                    <p><label>会议开始时间</label><input type="date" class="in"></p>
+                    <p><label>会议结束时间</label><input type="date" class="in"></p>
+                    <p><label>会议类型</label>
+                        <select id="select">
+                            <option value="不限" selected="selected">不限</option>
+                            <option value="培训/讲座">培训/讲座</option>
+                            <option value="工作会/总结会">工作会/总结会</option>
+                            <option value="公司年会">公司年会</option>
+                            <option value="经销商/招商/推介会">经销商/招商/推介会</option>
+                            <option value="研讨/交流/论坛">研讨/交流/论坛</option>
+                            <option value="团建/拓展/休闲会">团建/拓展/休闲会</option>
+                            <option value="颁奖/典礼/发布会">颁奖/典礼/发布会</option>
+                        </select>
+                    </p>
+                    <p><label>参会人数</label>
+                        <select id="select1">
+                            <option value="10-30">10-30</option>
+                            <option value="30-60">30-60</option>
+                            <option value="60-100">60-100</option>
+                            <option value="100-200">100-200</option>
+                            <option value="200-300">200-300</option>
+                            <option value="300-400">300-400</option>
+                            <option value="400-500">400-500</option>
+                            <option value="500+">500+</option>
+                        </select>
+                    </p>
+                    <p><label>会议预算</label>
+                        <select id="select2">
+                            <option value="3千以下">3千以下</option>
+                            <option value="3-5千">3-5千</option>
+                            <option value="5-8千">5-8千</option>
+                            <option value="8千-1.2万">8千-1.2万</option>
+                            <option value="1.2-1.5万">1.2-1.5万</option>
+                            <option value="1.5-2万">1.5-2万</option>
+                            <option value="2-3万">2-3万</option>
+                            <option value="3-5万">3-5万</option>
+                            <option value="5-8万">5-8万</option>
+                            <option value="8-12万">8-12万</option>
+                            <option value="12-20万">12-20万</option>
+                            <option value="20-30万">20-30万</option>
+                            <option value="30万以上">30万以上</option>
+                        </select>
+                    </p>
+                   <p><label>其他选择</label>
+                    <div class="row xz">
+                        <div class="col-md-2">
+                        <span><input type="checkbox">用餐</span>
+                        <span><input type="checkbox">交通租车</span>
+                        <span><input type="checkbox">话音通话</span>
+                        </div>
+                        <div class="col-md-2">
+                        <span><input type="checkbox">住宿</span>
+                        <span><input type="checkbox">舞美演出</span>
+                        <span><input type="checkbox">灯光音响</span>
+                        </div>
+                        <div class="col-md-2">
+                        <span><input type="checkbox">场地搭建</span>
+                        <span><input type="checkbox">摄影摄像</span>
+                        </div>
+                        <div class="col-md-2">
+                        <span><input type="checkbox">视频投影</span>
+                        <span><input type="checkbox">礼仪服务</span>
+                        </div>
+                        <div class="col-md-2">
+                        <span><input type="checkbox">鲜花礼品</span>
+                        </div>
+                    </div>
+                    </p>
+                    <p><label></label><input type="submit" value="立即发布" class="btn btn-warning"></p>
+                </form>
+            </div>
+    </div>
+        <div class="col-md-4 col-sm-4">
+            <div class="thumbnail">
+                <div class="page-header">
+                    <h3>会议顾问帮您免费找场地</h3>
+                </div>
+                <div class="nr">
+                    <p class="xq">发布需求后</p>
+                    <p>15分钟会议顾问致电，1对1贴心服务</p>
+                    <p class="xq">会议需求反馈</p>
+                    <p>舒心的体验，无任何附加费用</p>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row text-center">
+            <p>版权所有：北京鸿世通国际会展有限公司</p>
+            <p>电话：86 10 6526 2861 &nbsp;传真：86 10 6538 0018
+                &nbsp;邮箱：<a href="#">info@annexhibition.com</a>
+            </p>
+            <p>网站建设技术支持：杰锐飞扬
+                &nbsp;备案号：<a href="#">京ICP备07034882号</a>
+            </p><i></i>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</html>

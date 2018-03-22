@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+body{
+    background-color: #f2f2f2;
+}
+header img{
+    padding: 13px 0;
+}
+header .bj .right{
+    float: right;
+    margin-right: 50px;
+}
+header .bj .right .shu{
+    padding:0 5px;
+}
+header .bj .right a{
+    display: inline-block;
+    color: #333;
+    line-height: 60px;
+}
+header .bj .right a:hover{
+    color: red;
+}
+
+
+.navbar-brand{
+    font-weight: 600;
+}
+#navbarC ul li a{
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: 600;
+}
+#navbarC ul li>a:hover{
+    background: #3983E5;
+    color: #fff;
+}
+
+.navbar-header i{
+    padding-right: 5px;
+    font-size: 16px;
+}
+header #navbarC a{
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+#banner{}
+
+.index-sider{
+    position: fixed;
+    width: 50px;
+    right: 0;
+    bottom: 390px;
+    z-index: 9;
+}
+.index-sider .weix, .index-sider .dh, .index-sider .shouji{
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin: 10px 0;
+    cursor: pointer;
+    background: url(../img/tmbj.png);
+    position: relative;
+    padding-top: 12px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.index-sider .ewm, .index-sider .dianh, .index-sider .sjewm{
+    position: absolute;
+    width: 156px;
+    height: 182px;
+    top: 68px;
+    left: -160px;
+    background: url("../img/beij.png") top center no-repeat;
+    box-sizing: border-box;
+    padding: 10px 17px 10px 10px;
+    display: none;
+    text-align: center;
+}
+.index-sider .sjewm{
+    width: 156px;
+    height: 160px;
+    top: 10px;
+    display: none;
+}
+.index-sider .sjewm img{
+    position: absolute;
+    right: 7px;
+    top: 0;
+}
+.index-sider .sjewm span{
+    display: block;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 43px;
+    text-align: center;
+}
+.index-sider .ewm span{
+    display: block;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 43px;
+    text-align: center;
+}
+.index-sider .dianh{
+    width: 156px;
+    height: 126px;
+    top: 128px;
+    display: none;
+}
+.index-sider .dianh p{
+    font-size: 16px;
+    line-height: 2;
+    color: #FFF;
+    text-align: left;
+}
+
+
+.hc .bj{
+    border: 5px solid #00afc7;
+    padding: 5px 15px;
+}
+.hc .bj a{
+    float: right;
+    margin-top: 25px;
+    text-decoration: none;
+}
+.hc .bj h4{
+    font-size: 22px;
+    color: #000;
+    font-family: 'tahoma,arial,microsoft yahei','hiragino sans gb',simsun,sans-serif;
+}
+.hc .bj .p1{
+    color: #888;
+    font-size: 15px;
+}
+.hc .bj span{
+    position: absolute;
+    width: 120px;
+    left: 45px;
+    margin-top: 11px;
+}
+.hc .bj input{
+    margin-top: 3px;
+}
+.hc .bj .p2 input{
+    width: 100%;
+    padding: 6px 52px;
+}
+.hc .bj .p3 input{
+    padding: 5px 15px;
+    margin-bottom: 12px;
+}
+.hc .bj .p4{
+    font-size: 14px;
+    background: #f4fbfc;
+    text-align: center;
+}
+#main{}
+#main .page-header{
+    margin-top: -5px;
+    color: #333;
+
+}
+#main .page-header h3{
+    margin-left: 20px;
+    font-size: 22px;
+}
+#main h4{
+    color: #000;
+    font-size: 19px;
+    font-weight: 500;
+}
+#main h4:hover{
+    color: red;
+}
+#main .nr{
+    padding: 0 32px 30px 32px;
+    font: 16px/20px "microsoft yahei";
+    color: #333;
+}
+#main .nr .xq{
+    color: #999;
+}
+#main .mt{
+    padding:0 10px;
+    border-bottom:1px solid #ebebeb;
+}
+#main .mt span{
+    float: right;
+}
+#main .mt a{
+    color: #333;
+
+}
+#main .mt a:hover{
+    text-decoration: none;
+    color: #3cb0d0;
+}
+
+#main .rm{
+    padding: 6px;
+    margin-bottom: 15px;
+}
+#main .rm h4{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#main .rm a{
+    color: #000;
+    text-decoration: none;
+}
+#main .rm a:hover{
+    color: red;
+}
+#main .rm .span1{
+    float: right;
+    margin-top: 10px;
+}
+#main .rm p{
+    float: right;
+    font-size: 14px;
+    color: #666;
+}
+#main .rm p span{
+    color: red;
+}
+
+
+
+#main .jq{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px;
+}
+#main .jq h4{
+    color: #000;
+    font-size: 19px;
+    font-weight: 500;
+}
+#main .jq h4:hover{
+    color: red;
+}
+#main .jq a{
+    font-size: 15px;
+    color: #000;
+}
+#main .jq a:hover{
+    text-decoration: none;
+    color: red;
+}
+#main  .row .thumbnail:hover{
+    /*border: 1px solid red;*/
+}
+#main .h2{
+    border-bottom: 2px solid #999;
+
+}
+#main .step{
+    float: right;
+    margin-top: -40px;
+}
+#main .step li.active{
+    background-position: 0 -25px;
+}
+#main .step li i{
+    background: url("../img/step.png");
+    height: 22px;
+    position: absolute;
+    top: 30px;
+    width: 12px;
+    z-index: 1;
+}
+
+#main .step li i.first{
+    background-position: 0 -75px;
+    display: block;
+}
+#main .step li{
+    float: left;
+    display: inline-block;
+    background: url("../img/step.png");
+    color: #fff;
+    font: normal 14px/22px "microsoft yahei",simsun,arial,sans-serif;
+    text-align: center;
+    width: 133px;
+    z-index: 1;
+}
+#main form {
+    display: inline;
+}
+#main form p{
+    padding: 5px 30px;
+}
+#main form label{
+    width: 100px;
+    float: left;
+    text-align: right;
+    margin-right: 30px;
+    font-size: 15px;
+    color: #999;
+}
+#main form .in, #main form select{
+    width: 75%;
+}
+#main form .xz{
+    margin-top: -15px;
+}
+#main form .xz span{
+    width: 80px;
+    float: left;
+}
+
+#footer{
+    border-top:2px solid #fff;
+    background: #e0e0e0;
+}
+#footer p:nth-child(1){
+    margin-top: 10px;
+}
+#footer a{
+    color: #000;
+}
+#footer a:hover{
+    text-decoration: none;
+}

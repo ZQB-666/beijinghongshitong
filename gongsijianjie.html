@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司简介</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/gongsijianjie.css">
+</head>
+<script>
+    function shouji(){
+        var a=document.getElementById("sjewm");
+        if (a.style.display=="block"){
+            a.style.display="none";
+        }else {
+            a.style.display="block";
+        }
+    }
+    function weix(){
+        var a=document.getElementById("ewm");
+        if (a.style.display=="block"){
+            a.style.display="none";
+        }else {
+            a.style.display="block";
+        }
+    }
+    function dh(){
+        var a= document.getElementById("dianh");
+        if(a.style.display=="block"){
+            a.style.display="none";
+        }else {
+            a.style.display="block";
+        }
+    }
+</script>
+<body>
+<header>
+    <div class="bj">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <a href="#"><img src="img/logo.png" alt=""/></a>
+                </div>
+                <div class="col-md-3">
+                    <div class="right">
+                        <a href="#">登录</a>
+                        <span class="shu">|</span>
+                        <a href="#">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav role="navigation" class="navbar navbar-default">
+        <div class="container">
+            <!--折叠的按钮-->
+            <div class="navbar-header">
+                <button data-target="#navbarC" class="navbar-toggle" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><i class="glyphicon glyphicon-home"></i>首页</a>
+            </div>
+            <!--导航，被折叠的步伐-->
+            <div id="navbarC" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="gongsijianjie.html" class="b1 active">公司简介</a></li>
+                    <li><a href="huichang.html" class="b2">会场预订</a></li>
+                    <li><a href="ruzhujiudian.html" class="b3">入住酒店</a></li>
+                    <li><a href="zucheyuding.html" class="b4">租车预定</a></li>
+                    <li><a href="#" class="b5">新闻中心</a></li>
+                    <li><a href="#" class="b6">联系方式</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="thumbnail">
+            <img src="img/bhst.jpg" alt="">
+        </div>
+    </div>
+</div>
+    <div class="index-sider">
+        <div class="shouji" onclick="shouji()">分享</div>
+        <div class="sjewm" id="sjewm">
+            <a href="#"><img src="img/fenx.png" alt=""></a>
+        </div>
+
+        <div class="weix" onclick="weix()">
+            <img src="img/wx.png" alt="">
+        </div>
+        <div class="ewm" id="ewm">
+            <img src="img/ewm.png" alt="">
+            <span>扫一扫，关注我们</span>
+        </div>
+
+        <div class="dh" onclick="dh()">
+            <img src="img/dh.png" alt="">
+        </div>
+        <div class="dianh" id="dianh">
+            <p>咨询电话：</p>
+            <p>0755-8284 8800
+                <br>
+                0755-8284 8900
+            </p>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="thumbnail">
+                <div class="neirong bg-success">
+                <div class="page-header"><h2>公司简介</h2></div>
+                    <p>北京鸿世通国际会展有限公司是一家国际专业展览公司。公司每年承接来自全世界不同国家和地区的专业国际展览会，
+                    公司主要业务涵盖了新能源、水及污水处理、流体机械（泵阀，管道，压缩机，及其配件）、农业及家禽畜牧产业、
+                    太阳光伏行业等领域。打造出专业的水展、农畜牧展、能源展，建材展系列。</p>
+                    <p>我公司具有一批高素质、积极进取且富有活力的年轻员工队伍。为参展业务提供展前、站中、展后一条龙服务，
+                        切实从客户的角度出发，理解、满足客户对参展的期望。是业内业务素质和知名度甚高的专业展览公司之一。
+                    </p>
+                    <p>公司团队迄今为止已经成立10年了，成功组织科多场国际知名展览会，尤其在东南亚区域的展会，我公司尤为突出。
+                    与国际知名度展览公司合作，并成为UBM，AMB，励展集团以及英富曼许多知名的中国区独家代理。
+                    公司负责人在国外专业的展览公司工作多年坚持以人为本，注意培养队伍，在工作中加强业务培训，提高员工的业务素质，
+                    在展览行业中致力于多渠道发展。</p>
+                    <p>北京鸿世通国际会展有限公司愿与各界人士搭建国内外贸易合作平台，为中国进口贸易做出贡献。</p>
+                    <h4>社会使命：</h4>
+                    <span>点石成金，发掘展商参展的真实价值</span>
+                    <p>展览行业的要义不仅在于为参展商发掘、明晰其参展的价值与附着价值，在于为消费者与展商提供真正物有所值、
+                    乃至物超价值的决策方案，更在于为社会系统供求之间的交换关系提供最终实现完全透明化操作平台，从而最大限度的降低展商的成本，
+                    提高人们的生活水品质。北京鸿世通国际会展有限公司以高度的使命感，通过实际行动为展商服务。</p>
+                    <h4>远景：</h4>
+                    <span>展览行业最具有魅力的营销利器</span>
+                    <p>北京鸿世通国际会展有限公司有杰出的专业团队，企业在参展后，展出的产品能够达到较好的市场认知率，
+                    还将导引企业占有高度的市场份额。</p>
+                    <h4>发展战略：</h4>
+                    <span>专注展览、立足北京、面向全球、自上而下、由点到面</span>
+                    <p>>北京鸿世通国际会展有限公司专注于展览会的特色、形成多个系列展会。包括了暖通、制冷机械、水处理设备、动力传动设备、通讯、
+                    食品、美容、化工等行业。充分发挥专业团队特有的优势，立足北京、面向全球、自上而下、由点到面，，
+                    使其成为全世界最具有影响力的展览行业的主、承办机构。</p>
+                    <h4>企业精神：</h4>
+                    <span>创新、坚韧、专业、服务</span><br>
+                    <span>创新 → 以 “逆水行舟” 的态度，坚持推陈出新，善于出奇制胜，引领同业潮头。</span><br>
+                    <span>坚韧 → 发现客户需求，满足客户需求是一项极为复杂的工作，只有百折不挠的精神，敢于自我刮骨疗伤的勇气，才会走向成功。</span><br>
+                    <span>专业 → 个人的成功往往是偶然的、暂时的，专业团队协作的成功才是必然的、长远的。</span><br>
+                    <span>服务 → 不论是对外部的客户海瑟对内部的同仁，服务都不只是行动，更是一种意识，一种自然而然的企业共同理念。</span>
+                    <h4>经营理念：</h4>
+                    <span>领先同业、追求卓越、诚信专注、创新共赢</span><br>
+                    <span>人无我有，人有我优，人有我变。占据行业创新前沿</span><br>
+                    <span>精心调研，专业操作，至诚服务、力求完善效果诚信立本，专业开拓，创新制胜，实现多赢</span><br>
+                    <span></span>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row text-center">
+            <p>版权所有：北京鸿世通国际会展有限公司</p>
+            <p>电话：86 10 6526 2861 &nbsp;传真：86 10 6538 0018
+                &nbsp;邮箱：<a href="#">info@annexhibition.com</a>
+            </p>
+            <p>网站建设技术支持：杰锐飞扬
+                &nbsp;备案号：<a href="#">京ICP备07034882号</a>
+            </p><i></i>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</html>

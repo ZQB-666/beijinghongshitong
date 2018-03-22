@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+body{
+    background-color: #f2f2f2;
+}
+header img{
+    padding: 13px 0;
+}
+header .bj .right{
+    float: right;
+    margin-right: 50px;
+}
+header .bj .right .shu{
+    padding:0 5px;
+}
+header .bj .right a{
+    display: inline-block;
+    color: #333;
+    line-height: 60px;
+}
+header .bj .right a:hover{
+    color: red;
+}
+
+.navbar-brand{
+    font-weight: 600;
+}
+#navbarC ul li a{
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: 600;
+}
+#navbarC ul li>a:hover{
+    background: #3983E5;
+    color: #fff;
+}
+.navbar{
+    margin-bottom: -1px;
+}
+.navbar-header i{
+    padding-right: 5px;
+    font-size: 16px;
+}
+.banner{
+    margin-top: 15px;
+}
+
+
+.index-sider{
+    position: fixed;
+    width: 50px;
+    right: 0;
+    bottom: 390px;
+    z-index: 9;
+}
+.index-sider .weix, .index-sider .dh, .index-sider .shouji{
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    margin: 10px 0;
+    cursor: pointer;
+    background: url(../img/tmbj.png);
+    position: relative;
+    padding-top: 12px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.index-sider .ewm, .index-sider .dianh, .index-sider .sjewm{
+    position: absolute;
+    width: 156px;
+    height: 182px;
+    top: 68px;
+    left: -160px;
+    background: url("../img/beij.png") top center no-repeat;
+    box-sizing: border-box;
+    padding: 10px 17px 10px 10px;
+    display: none;
+    text-align: center;
+}
+.index-sider .sjewm{
+    width: 156px;
+    height: 160px;
+    top: 10px;
+    display: none;
+}
+.index-sider .sjewm img{
+    position: absolute;
+    right: 7px;
+    top: 0;
+}
+.index-sider .sjewm span{
+    display: block;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 43px;
+    text-align: center;
+}
+.index-sider .ewm span{
+    display: block;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 43px;
+    text-align: center;
+}
+.index-sider .dianh{
+    width: 156px;
+    height: 126px;
+    top: 128px;
+    display: none;
+}
+.index-sider .dianh p{
+    font-size: 16px;
+    line-height: 2;
+    color: #FFF;
+    text-align: left;
+}
+
+
+
+.main{
+    margin-top: -15px;
+}
+.main .page-header{
+    margin-top: -20px;
+}
+.main .neirong{
+     line-height: 1.8em;
+     padding:20px 20px;
+ }
+.main .neirong h2{
+    color: red;
+    font-weight: bold;
+}
+
+.main .neirong p{
+    text-indent: 2em;
+    font-size: 16px;
+}
+.main .neirong span{
+    font-size: 16px;
+}
+.main .neirong h4{
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+#footer{
+    border-top:2px solid #fff;
+    background: #e0e0e0;
+}
+#footer p:nth-child(1){
+    margin-top: 10px;
+}
+#footer a{
+    color: #000;
+}
+#footer a:hover{
+    text-decoration: none;
+}
