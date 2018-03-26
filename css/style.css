@@ -29,16 +29,12 @@ text-indent: -9999em;
 cursor: pointer;
 display: none;
 
-/*注册部分开始*/
-
-
-
-/*注册部分结束*/
-
 .thumbnail:hover {
     /*border: 1px solid red;*/
 }
 
+
+/*头部部分开始*/
 header img {
     padding: 13px 0;
 }
@@ -85,13 +81,15 @@ header .bj .right a:hover {
     padding-right: 5px;
     font-size: 16px;
 }
-
+/*头部部分结束*/
 #banner {}
 
 .carousel-indicators .active {
     background-color: red;
 }
 
+
+/*侧边部分开始*/
 .index-sider {
     position: fixed;
     width: 50px;
@@ -174,7 +172,9 @@ header .bj .right a:hover {
     color: #FFF;
     text-align: left;
 }
+/*侧边部分结束*/
 
+/*main部分开始*/
 .lineb .dg {
     height: 60px;
     line-height: 60px;
@@ -432,10 +432,7 @@ header .bj .right a:hover {
     border-left: 4px solid #FFF;
     border-right: 4px solid #FFF;
 }
-
-
 /*特价酒店部分*/
-
 
 /*团购酒店部分*/
 
@@ -468,13 +465,10 @@ header .bj .right a:hover {
     font: 32px Arial;
     color: #F60;
 }
-
-
 /*团购酒店部分*/
-
+/*main部分结束*/
 
 /*footer部分*/
-
 #footer {
     border-top: 2px solid #fff;
     background: #e0e0e0;
