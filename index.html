@@ -48,20 +48,6 @@
 <script>
 window.addEventListener("load", function () {
             var btn = document.getElementById("btn");
-            btn.addEventListener("mouseover", moveIn, false);
-            btn.addEventListener("mouseout", moveOut, false);
-
-            function moveIn() {
-                btn.style.color = "#fff"; //修改的是内联样式，具有最高的优先级; 
-                btn.style.textIndent = "0em";
-                btn.style.backgroundImage = "none";
-                /*btn.style.backgroundColor = "#FF4401";*/
-            }
-
-            function moveOut() {
-                btn.style.textIndent = "-9999em";
-                /*btn.style.backgroundImage = "url(icons.png)";*/
-            }
 
             function goTop(acceleration, time) { //修改参数可调整返回顶部的速度 
                 acceleration = acceleration || 0.5;
@@ -78,7 +64,7 @@ window.addEventListener("load", function () {
                 }
                 window.onscroll = function () {
                     var scrollTop = getScrollTop();
-                    if (scrollTop > 500) { //判断滚动条距离窗口顶部多远时显示出来，这里是500px 
+                    if (scrollTop > 750) { //判断滚动条距离窗口顶部多远时显示出来，这里是750px 
                         btn.style.display = "block";
                     }
                     else {
