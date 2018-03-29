@@ -34,6 +34,8 @@
             a.style.display="block";
         }
     }
+    
+    
     function selectCity(){
         var City=new Array();
         City[0]=["青秀区"];
@@ -41,11 +43,11 @@
         City[2]=["永定区"];
         City[3]=["城区"];
         City[4]=["小店区"];
-        var n=document.getElementById("sheng").selectedIndex;
-        document.getElementById("city").options.length=0;
+        var n=document.getElementById("city").selectedIndex;
+        document.getElementById("area").options.length=0;
         for(var i=0;i<City[n].length;i++){
             var op=new Option(City[n][i],City[n][i]);
-            document.getElementById("city").options.add(op);
+            document.getElementById("area").options.add(op);
         }
     }
 </script>
@@ -137,14 +139,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <h5>取车</h5>
-                                <select onchange="selectCity()" id="sheng">
+                                <select onchange="selectCity()" id="city">
                                     <option value="">南宁</option>
                                     <option value="">海口</option>
                                     <option value="">张家界</option>
                                     <option value="">大同</option>
                                     <option value="">太原</option>
                                 </select>
-                                <select id="city">
+                                <select id="area">
                                     <option value="">青秀区</option>
                                 </select>
                                 <input type="date">
@@ -154,7 +156,7 @@
                             </div>
                             <div class="col-md-6">
                                 <h5>还车</h5>
-                                <select onchange="selectCity()" id="sheng1">
+                                <select onchange="selectCity()" id="city1">
                                     <option value="">南宁</option>
                                     <option value="">海口</option>
                                     <option value="">张家界</option>
@@ -163,7 +165,7 @@
                                 </select>
 
 
-                                <select id="city1">
+                                <select id="area1">
                                     <option value="">青秀区</option>
                                 </select>
                                 <input type="date">
