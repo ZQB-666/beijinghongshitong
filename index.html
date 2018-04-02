@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <script>
-    function shouji(){
-        var a=document.getElementById("sjewm");
+    function fenxiang(){
+        var a=document.getElementById("fxlj");
         if (a.style.display=="block"){
             a.style.display="none";
         }else {
@@ -55,7 +55,7 @@ window.addEventListener("load", function () {
                 var speed = 1 + acceleration;
 
                 function getScrollTop() { //取得滚动条的竖直距离 
-                    return document.documentElement.scrollTop || document.body.scrollTop;
+                    return document.documentElement.scrollTop ||  document.body.scrollTop;  //||或
                 }
 
                 function setScrollTop(value) { //设置滚动条的竖直距离,实现效果的关键就是在很短的间隔时间内不断地修改滚动条的竖直距离,以实现滚动效果 
@@ -175,9 +175,9 @@ window.addEventListener("load", function () {
 
    <!--侧边部分开始-->
     <div class="index-sider">
-        <div class="shouji" onclick="shouji()">分享</div>
-        <div class="sjewm" id="sjewm">
-            <a href="#"><img src="img/fenx.png" alt=""></a>
+        <div class="fenxiang" onclick="fenxiang()">分享</div>
+        <div class="fxlj" id="fxlj">
+            <a href="https://www.baidu.com/"><img src="img/fenx.png" alt=""></a>
         </div>
         <div class="weix" onclick="weix()">
             <img src="img/wx.png" alt="">
@@ -472,7 +472,7 @@ window.addEventListener("load", function () {
 </div>
 </div>
 </div>
-<!--<div class="row">
+<div class="row">
 <div class="col-md-3 col-sm-3">
 <div class="thumbnail">
     <div class="tp">
@@ -544,7 +544,7 @@ window.addEventListener("load", function () {
 </div>
 
 
-</div>-->
+</div>
 </div>
 </section>
 
